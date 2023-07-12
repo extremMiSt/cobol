@@ -27,14 +27,15 @@
                     MOVE max2 TO max3
                     MOVE max1 TO max2
                     MOVE cur TO max1
-                    MOVE 0 TO cur 
-                 ELSE IF max2 < cur THEN
+                 ELSE 
+                    IF max2 < cur THEN
                     MOVE max2 TO max3 
                     MOVE cur TO max2
-                    MOVE 0 TO cur 
-                 ELSE IF max3 < cur THEN
-                    MOVE cur TO max3
-                    MOVE 0 TO cur
+                    ELSE 
+                       IF max3 < cur THEN
+                       MOVE cur TO max3
+                       END-IF
+                    END-IF
                  END-IF
                  MOVE 0 TO cur
               ELSE 
