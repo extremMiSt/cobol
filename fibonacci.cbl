@@ -6,6 +6,7 @@
        01 ret PIC 9(21).
        PROCEDURE DIVISION.
        MAIN SECTION.
+           DISPLAY "Enter 9(3): " WITH NO ADVANCING
            ACCEPT n
            CALL "FibonacciLoop" USING n, ret
            DISPLAY ret
